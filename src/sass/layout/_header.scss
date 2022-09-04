@@ -83,6 +83,15 @@
         text-align: center;
         color: #000000;
         margin-left: 38px;
+        transition: background color var(--timing-function);
+
+        &:hover {
+            background: var(--second-button-color);
+        }
+        &:focus {
+            background: var(--second-button-color);
+            color: var(--white);
+        }
     }
 }
 

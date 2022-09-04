@@ -70,6 +70,15 @@
         line-height: 1.21;
         text-align: center;
         color: var(--black);
+        transition: background color var(--timing-function);
+
+        &:hover {
+            background: var(--second-button-color);
+        }
+        &:focus {
+            background: var(--second-button-color);
+            color: var(--white);
+        }
 
     }
 
