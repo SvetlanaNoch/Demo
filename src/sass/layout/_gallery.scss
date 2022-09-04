@@ -1,68 +1,63 @@
 .gallery {
-    position: relative;
-    width: 100%;
-    max-width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    // background-image: url(./image/floor-ice.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: center;
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  // background-image: url(./image/floor-ice.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: center;
 }
 
 .gallery__title {
-    display: none;
+  display: none;
 }
 
 @media (min-width: 768px) {
-    .gallery {
-        max-width: 704px;
-        height: 958px;
-    }
+  .gallery {
+    max-width: 704px;
+    height: 958px;
+  }
 }
 
 @media (min-width: 1200px) {
-    .gallery {
-        max-width: 1013px;
-        height: 1020px;
-    }
+  .gallery {
+    max-width: 1013px;
+    height: 1020px;
+  }
 }
 
-
-
 .slick-carousel {
-    position: fixed;
-    transform: translateY(-24px);
+  position: fixed;
+  transform: translateY(-24px);
 }
 
 .gallery-photo {
-    width: 100%;
+  width: 100%;
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 7.5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 7.5px;
 }
 
-
-
-
 @media (min-width: 768px) {
-    .slick-carousel {
-        transform: translateY(-50%);
-    }
+  .slick-carousel {
+    transform: translateY(-50%);
+  }
 
-    .gallery-photo {
-        border-radius: 18px;
-    }
+  .gallery-photo {
+    border-radius: 18px;
+  }
 }
 
 @media (min-width: 1200px) {
-    .slick-carousel {
-        transform: translateY(-94px);
-    }
+  .slick-carousel {
+    transform: translateY(-94px);
+  }
 
-    .gallery-photo {
-        border-radius: 24px;
-    }
+  .gallery-photo {
+    border-radius: 24px;
+  }
 }

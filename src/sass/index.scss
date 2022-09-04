@@ -1,10 +1,8 @@
-
 @import './base/base';
 @import './base/container';
 @import './base/section';
 @import './base/common';
 @import './base/null-style';
-
 
 @import './components/logo';
 @import './components/burger-btn';
@@ -17,8 +15,6 @@
 @import './components/buttons';
 @import './components/social-media';
 
-
-
 @import './layout/header';
 @import './layout/hero';
 @import './layout/products';
@@ -28,7 +24,6 @@
 @import './layout/contacts';
 @import './layout/footer';
 @import './layout/gallery';
-
 
 @import './utils/variables';
 @import './utils/mixins';
