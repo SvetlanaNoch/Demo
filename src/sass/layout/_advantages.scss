@@ -5,9 +5,9 @@
 //------mobile-------//
 
 @media screen and (max-width: 767px) {
-  body{
-    background-color: #84A178;
-}
+  .advantages-section{
+    background-color:#84A178
+  }
   .advantages-list {
     list-style-type: none;
     display: flex;
@@ -74,10 +74,9 @@
 //------tablet-------//
 
 @media screen and (min-width: 768px) and (max-width:1199px) {
-  
-  body{
-    background-color: #84A178;
-}
+  .advantages-section{
+    background-color:#84A178
+  }
   .advantages-list {
     list-style-type: none;
     display: flex;
@@ -146,9 +145,9 @@
 }
 //------desktop-------//
 @media screen and (min-width: 1200px){
-body{
-    background-color: #84A178;
-}
+  .advantages-section{
+    background-color:#84A178
+  }
 .advantages-list{
     list-style-type: none;
     display: flex;
