@@ -1,0 +1,131 @@
+/*---------MOBILE---------------*/
+@media screen and (max-width: 767px) {
+    .header {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: var(--background-color);
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__button {
+        display: none;
+    }
+
+    .header__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header__logo-img {
+        width: 40px;
+        height: 37px;
+    }
+
+    .mobile-menu-open {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        line-height: 0;
+        fill: var(--white);
+    }
+}
+
+/*-----------TABLET--------------*/
+@media screen and (min-width: 768px) {
+    .header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: var(--background-color);
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header__logo-img {
+        width: 48px;
+        height: 44px;
+    }
+
+    .header__buttons {
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-menu-open {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        line-height: 0;
+        fill: var(--white);
+    }
+
+    .header__button {
+        background: var(--main-button-color);
+        border: none;
+        border-radius: 10px;
+        min-width: 152px;
+        height: 42px;
+        font-family: var(--main-font-family);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.21;
+        text-align: center;
+        color: #000000;
+        margin-left: 38px;
+    }
+}
+
+/*---------------DESKTOP-----------------*/
+@media screen and (min-width: 1200px) {
+    .mobile-menu-open {
+        display: none;
+    }
+
+    .header__box {
+        display: flex;
+        align-items: center;
+    }
+
+    .page-nav {
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+    }
+
+    .header__logo-img {
+        width: 60px;
+        height: 65px;
+        margin-right: 269px;
+    }
+
+    .header__menu {
+        display: flex;
+        gap: 27px;
+    }
+
+    .header__menu-link {
+        font-family: var(--main-font-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        color: var(--franchise-button-color);
+        transition: color var(--timing-function);
+
+        &:hover,
+        &:focus {
+            color: var(--icon-fill);
+        }
+
+    }
+}
