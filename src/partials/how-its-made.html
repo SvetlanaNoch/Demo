@@ -1,1 +1,61 @@
-<section> how-its-made </section>
+<section class="about section section-about">
+  <div class="container">
+    <p class="about__label">tradition and love</p>
+    <h2 class="about__title">how it’s made?</h2>
+    <div class="pos-flex">
+      <div class="about__img-wrapper">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/Desktop/how-its-made/cow-desktop.png    1x,
+              ./images/Desktop/how-its-made/cow-desktop@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/Tablet/how-its-made/cow-tablet.png    1x,
+              ./images/Tablet/how-its-made/cow-tablet@2x.png 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/Mobile/how-its-made/cow-mobile.png    1x,
+              ./images/Mobile/how-its-made/cow-mobile@2x.png 2x
+            "
+          />
+          <img
+            class="about__img"
+            src="./images/Mobile/how-its-made/cow-mobile.png"
+            alt="Корова пасётся на поле"
+          />
+        </picture>
+      </div>
+
+      <div class="about__text-wrapper">
+        <p class="about__text">
+          Ice is a place where you will become not only a little happier, but
+          also healthier. Health is the main value for us, and we follow it when
+          creating our handmade desserts.
+        </p>
+        <p class="about__text--font-size">
+          We use traditional recipes and 100% natural ingredients. Our products
+          are so natural that they can be given to children from the age of
+          three years. Sweets lovers can expect 55 types of ice cream, 15 types
+          of coffee and 23 milkshakes.
+        </p>
+        <p class="about__text--font-size about__text--font-size-hidden">
+          This is enough to choose ice cream and coffee for any mood!
+        </p>
+        <button class="about__read-more" type="button">
+          Read more
+          <svg class="about__icon" width="12" height="12">
+            <use href="./img/about/sprite.svg#icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
