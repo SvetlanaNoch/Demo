@@ -69,7 +69,7 @@
   font-size: 12px;
   line-height: 19px;
   text-align: center;
-  color: var(white);
+  color: var(--white);
 }
 
 .about__read-more {
@@ -83,7 +83,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: var(black);
+  color: var(--black);
   background-color: var(--main-button-color);
   border: transparent;
   border-radius: 10px;
@@ -107,7 +107,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: var(white);
+  color: var(--white);
 }
 .about__icon {
   margin-left: 9px;
