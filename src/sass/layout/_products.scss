@@ -134,21 +134,7 @@ body {
     justify-content: center;
     list-style: none;
 }
- .products__item {
-    
-        @media screen and (max-width: 767px) {
-            //   margin-left: 20px;
-            //   margin-right: 20px;
-        
-            }
-        
-            @media screen and (min-width: 768px) {
-        
-            }
-        
-            @media screen and (min-width: 1200px) {
-            }
- }
+
  .products__item:not(:first-child) {
     @media screen and (max-width: 767px) {
             margin-top: 164px;
@@ -180,7 +166,7 @@ body {
         
     }
         @media screen and (min-width: 1200px) {
-        width: 370px;
+        width: 368px;
         height: 540px;
         border-radius: 24px;
     }
