@@ -262,20 +262,19 @@ body {
     color: var(--secondary-black-color);
         @media screen and (max-width: 767px) {
                 font-size: 20px;
-                padding-top: 123px;
-                margin: 0 0 40px 0;
+                padding: 123px 0 40px 0;
+                
             }
         
             @media screen and (min-width: 768px) {
                 font-size: 22px;
-                padding-top: 107px;
-                margin: 0 0 40px 0;
+                padding: 107px 0 40px 0;
             }
         
             @media screen and (min-width: 1200px) {
                 font-size: 30px;
-                padding-top: 166px;
-                margin: 0 0 65px 0;
+                padding: 166px 0 65px;
+                
             }
 }
 .products__card-text {
@@ -293,17 +292,17 @@ body {
 
     @media screen and (max-width: 767px) {
             font-size: 14px;
-            margin: 0 40px;
+            padding: 0 40px;
         }
     
         @media screen and (min-width: 768px) {
         font-size: 14px;
-        margin: 0 26px;
+        padding: 0 26px;
         }
     
         @media screen and (min-width: 1200px) {
         font-size: 16px;
-        margin: 0 63px;
+        padding: 0 63px;
         }
 }
 
