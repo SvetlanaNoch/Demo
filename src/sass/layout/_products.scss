@@ -8,67 +8,19 @@ body {
 .products {
     margin-left: auto;
     margin-right: auto;
-    
-    // background-position: center;
-    background-size: cover;
+    background-image: url(../images/Desktop/products/background-ice-cream.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media screen and (max-width: 767px) {
-        max-width: 320px;
-        background-image: url(../images/Mobile/products/background-ice-cream.jpg);
-        background-repeat: repeat-y;
-    
-          @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
+    @media screen and (min-device-pixel-ratio: 2),
+                    screen and (min-resolution: 192dpi),
+                    screen and (min-resolution: 2dppx) {
+                        background-image: url(../images/Desktop/products/background-ice-cream@2x.jpg);
+                    }
 
-                background-image: url(../images/Mobile/products/background-ice-cream@2x.jpg);
-            }
-    }
-        
-            @media screen and (min-width: 768px) and (max-width: 1199px) {
-                max-width: 768px;
-                background-image: url(../images/Tablet/products/background-ice-cream.jpg);
-        
-                @media screen and (min-device-pixel-ratio: 2),
-                screen and (min-resolution: 192dpi),
-                screen and (min-resolution: 2dppx) {
-                    background-image: url(../images/Tablet/products/background-ice-cream@2x.jpg);
-                   
-                }
-            }
-        
-            @media screen and (min-width: 1200px) {
-                max-width: 1200px;
-                background-image: url(../images/Desktop/products/background-ice-cream.jpg);
-        
-                @media screen and (min-device-pixel-ratio: 2),
-                screen and (min-resolution: 192dpi),
-                screen and (min-resolution: 2dppx) {
-                    background-image: url(../images/Desktop/products/background-ice-cream@2x.jpg);
-                }
-            }
-
-}
-
-
-.container {
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-
-    @media screen and (min-width: 480px) {
-        width: 320px;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
 }
 
 
@@ -227,8 +179,6 @@ body {
     @media screen and (min-width: 768px) {
         top: -109px;
     }
-
-    
     @media screen and (min-width: 1200px) {
         width: 300px;
         height: 300px;
@@ -262,20 +212,17 @@ body {
     color: var(--secondary-black-color);
         @media screen and (max-width: 767px) {
                 font-size: 20px;
-                padding-top: 123px;
-                margin: 0 0 40px 0;
+                padding: 123px 0 40px 0;
             }
         
             @media screen and (min-width: 768px) {
                 font-size: 22px;
-                padding-top: 107px;
-                margin: 0 0 40px 0;
+                padding: 107px 0 40px 0;
             }
         
             @media screen and (min-width: 1200px) {
                 font-size: 30px;
-                padding-top: 166px;
-                margin: 0 0 65px 0;
+                padding: 166px 0 65px;
             }
 }
 .products__card-text {
@@ -293,17 +240,17 @@ body {
 
     @media screen and (max-width: 767px) {
             font-size: 14px;
-            margin: 0 40px;
+            padding: 0 40px;
         }
     
         @media screen and (min-width: 768px) {
         font-size: 14px;
-        margin: 0 26px;
+        padding: 0 26px;
         }
     
         @media screen and (min-width: 1200px) {
         font-size: 16px;
-        margin: 0 63px;
+        padding: 0 63px;
         }
 }
 
@@ -323,15 +270,12 @@ body {
     background-color: #D6936D;
 }
 
-
-
 .products__card-arrow:hover {
     width: 50px;
 }
 
 .products__card-button:focus .products__card-arrow {
     width: 50px;
-
 }
 
 .products__card-button {
