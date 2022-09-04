@@ -10,7 +10,7 @@ img {
   display: block;
 }
 .section-about {
-  background-color: #84a178;
+  background-color: var(--background-color);
   padding-top: 60px;
   padding-bottom: 40px;
 }
@@ -21,13 +21,13 @@ img {
 }
 .about__label {
   width: 100%;
-  font-family: 'Montserrat';
+
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: var(--franchise-button-color);
   margin-bottom: 12px;
 }
 .about__title {
@@ -38,7 +38,7 @@ img {
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: var(--franchise-button-color);
   margin-bottom: 32px;
 }
 .pos-flex {
@@ -75,23 +75,23 @@ img {
 .about__text {
   max-width: 220px;
   margin-bottom: 4px;
-  font-family: 'Montserrat';
+
   font-weight: 400;
   font-size: 12px;
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #fcfcfc;
+  color: var(--franchise-button-color);
 }
 .about__text--font-size {
   max-width: 220px;
   margin-bottom: 20px;
-  font-family: 'Montserrat';
+
   font-weight: 400;
   font-size: 12px;
   line-height: 19px;
   text-align: center;
-  color: #ffffff;
+  color: var(white);
 }
 
 .about__read-more {
@@ -99,15 +99,14 @@ img {
   justify-content: center;
   padding: 12px 34px;
 
-  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
   display: flex;
   align-items: center;
   text-align: center;
-  color: #000000;
-  background-color: #f8d24e;
+  color: var(black);
+  background-color: var(--main-button-color);
   border: transparent;
   border-radius: 10px;
 }
@@ -115,13 +114,13 @@ img {
 .about__read-more:focus {
   outline: transparent;
   border: transparent;
-  background-color: #0a8817;
+  background-color: var(--second-button-color);
 }
 .about__read-more:focus {
-  color: #fcfcfc;
+  color: var(--franchise-button-color);
 }
 .about__read-more:focus > .about__icon {
-  fill: #fcfcfc;
+  fill: var(--franchise-button-color);
 }
 .special {
   font-weight: 600;
@@ -130,7 +129,7 @@ img {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #ffffff;
+  color: var(white);
 }
 .about__icon {
   margin-left: 9px;
@@ -174,7 +173,7 @@ img {
     font-size: 34px;
     line-height: 43px;
     letter-spacing: 0.06em;
-    color: #fcfcfc;
+    color: var(--franchise-button-color);
     margin-bottom: 40px;
   }
   .pos-flex {
@@ -242,7 +241,7 @@ img {
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #fcfcfc;
+    color: var(--franchise-button-color);
   }
   .about__title {
     font-size: 36px;
