@@ -2,7 +2,6 @@
   background-color:#84A178
 }
 
-
 //------mobile-------//
 
 @media screen and (max-width: 767px) {
@@ -19,10 +18,9 @@
      margin-left: 45px;
      justify-content: center;
      align-items: center;
-     padding: 0;
-     padding-bottom: 60px;
-     
-     
+     margin-bottom: 60px;
+     padding-inline-start: 0;
+    
    }
  
    .advantages-list__item {
@@ -33,6 +31,7 @@
      margin-right: 32px;
      justify-content: center;
      align-items: center;
+     margin-bottom: 28px;
    }
    
    
@@ -47,31 +46,32 @@
      height: 50px;
      background: #f8d24e;
      border-radius: 25px;
+     
    }
    .advantages-title {
      font-family: "Montserrat";
      font-style: normal;
-     font-weight: 700;
-     font-size: 58px;
-     line-height: 71px;
-     text-align: center;
-     letter-spacing: 0.04em;
-     text-transform: uppercase;
-     color: #fcfcfc;
-     padding-top: 47px;
+ font-weight: 700;
+ font-size: 36px;
+ line-height: 1.16;
+ text-align: center;
+ letter-spacing: 0.04em;
+ text-transform: uppercase;
+ color: #FCFCFC;
+ margin-top: 60px;
      
    }
    .advantages-text {
-     font-family: "Montserrat";
+     font-family: 'Montserrat';
      font-style: normal;
-     font-weight: 400;
-     font-size: 16px;
-     line-height: 176%;
+     font-weight: 700;
+     font-size: 12px;
+     line-height:1.66;
      text-align: center;
-     letter-spacing: 0.02em;
-     color: #fcfcfc;
+     color: #FCFCFC;
      margin-top: 18px;
-     margin-bottom: 28px;
+    
+     
    }
    .advantages-list__item:hover{
      transform: scale(1.05);
@@ -88,19 +88,12 @@
      background-color: #84A178;
      background-size: cover;
     }
+   
    .advantages-list {
      list-style-type: none;
      display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-   .advantages-list {
-     list-style-type: none;
-     display: flex;
-     padding-left: 76px;
-     padding-right: 76px;
-    padding-inline-start: 0;
     
+    padding-inline-start: 0;
     align-items: center;
     justify-content: center;
     
@@ -111,7 +104,6 @@
    .advantages-list__item {
      display: block;
      position: relative;
-     
      gap: 80px;
      margin-left: 32px;
      margin-right: 32px;
@@ -130,29 +122,27 @@
      border-radius: 25px;
    }
    .advantages-title {
-     font-family: "Montserrat";
-     font-style: normal;
-     font-weight: 700;
-     font-size: 58px;
-     line-height: 71px;
-     text-align: center;
-     letter-spacing: 0.04em;
-     text-transform: uppercase;
-     color: #fcfcfc;
-     padding-top: 32px;
+     font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 48px;
+ line-height: 1.22;
+ text-align: center;
+ color: #FFFFFF;
+ letter-spacing: 0.04em;
+ margin-top: 64px;
      
    }
    .advantages-text {
-     font-family: "Montserrat";
-     font-style: normal;
-     font-weight: 400;
-     font-size: 16px;
-     line-height: 176%;
-     text-align: center;
-     letter-spacing: 0.02em;
-     color: #fcfcfc;
-     margin-bottom: 28px;
-     margin-top: 16px;
+     font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 1.71;
+ text-align: center;
+ color: #FFFFFF;
+ margin-top: 16px;
+     
    }
    .advantages-list__item:hover{
      transform: scale(1.05);
@@ -169,7 +159,7 @@
  .advantages-list{
      list-style-type: none;
      display: flex;
-     padding: 0;
+    
      
      
      
@@ -201,31 +191,32 @@
      height: 50px;
      background: #F8D24E;
      border-radius: 25px;
+     
  }
+ 
  
  
  .advantages-title{
-     font-family: 'Montserrat';
-     font-style: normal;
-     font-weight: 700;
-     font-size: 58px;
-     line-height: 71px;
-     text-align: center;
-     letter-spacing: 0.04em;
-     text-transform: uppercase;
-     color: #FCFCFC;
-     padding-top: 47px;
-     padding-bottom: 16px;
-     
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 58px;
+   line-height: 1.22;
+   text-align: center;
+   letter-spacing: 0.04em;
+   color: #FCFCFC;
+   margin-top: 80px;
+    
  }
  .advantages-text{
-     font-family: 'Montserrat';
- font-style: normal;
- font-weight: 400;
- font-size: 16px;
- line-height: 176%;
- text-align: center;
- letter-spacing: 0.02em;
- color: #FCFCFC;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.75;
+   text-align: center;
+   letter-spacing: 0.02em;
+   color: #FCFCFC;
+   margin-top: 16px;
  }
  }
