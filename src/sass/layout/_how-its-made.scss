@@ -87,6 +87,7 @@
   background-color: var(--main-button-color);
   border: transparent;
   border-radius: 10px;
+  transition: var(--timing-function);
 }
 .about__read-more:hover,
 .about__read-more:focus {
@@ -97,8 +98,8 @@
 .about__read-more:focus {
   color: var(--franchise-button-color);
   & > .about__icon {
-  fill: var(--franchise-button-color);
-}
+    fill: var(--franchise-button-color);
+  }
 }
 .special {
   font-weight: 600;
