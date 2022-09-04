@@ -1,3 +1,6 @@
+.advantages-section{
+  background-color:#84A178
+}
 //------mobile-------//
 
 @media screen and (max-width: 767px) {
@@ -49,7 +52,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #fcfcfc;
-    padding-top: 47px;
+    margin-top: 47px;
     padding-bottom: 16px;
   }
   .advantages-text {
