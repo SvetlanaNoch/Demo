@@ -262,6 +262,11 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
   visibility: hidden;
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(100%) scale(4);
 }
 .modal__container {
   position: relative;
@@ -315,9 +320,14 @@
     font-size: 16px;
     line-height: 22px;
   }
+  .modal {
+    width: 568px;
+  }
 }
 
-.is-hidden {
+.modal.is-hidden {
   visibility: hidden;
-  opacity: 0;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(100%) scale(4);
 }
