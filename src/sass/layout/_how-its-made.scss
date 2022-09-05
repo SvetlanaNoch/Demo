@@ -261,13 +261,6 @@
   background-color: white;
   border: 2px solid #f8d24e;
   border-radius: 10px;
-  visibility: hidden;
-  &.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(100%) scale(4);
-  }
 }
 .modal__container {
   position: relative;
@@ -329,8 +322,5 @@
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-<<<<<<< HEAD
-=======
   transform: translateY(100%) scale(4);
->>>>>>> 640dfef97e5065bcaec82a803004ad50a7fa8b78
 }
