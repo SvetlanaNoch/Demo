@@ -20,14 +20,13 @@
     }
 
     .mobile-menu__box {
-        padding: 12px 22px;
+        padding-top: 12px;
+        padding-bottom: 63px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
-       
     }
-
 
     .mobile-menu__top {
         display: flex;
