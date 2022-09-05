@@ -1,13 +1,16 @@
 .gallery {
     position: relative;
-    width: 100%;
-    max-width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    // background-image: url(./image/floor-ice.png);
+    background-image: url(../images/Desktop/products/background-ice-cream@2x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: center;
+}
+
+.gallery__box{
+    position: relative;
+    width: 100%;
+    max-width:calc(280px + 2 * 20px);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .gallery__title {
@@ -15,20 +18,18 @@
 }
 
 @media (min-width: 768px) {
-    .gallery {
-        max-width: 704px;
+    .gallery__box{
+        max-width:calc(704px + 2*32px);
         height: 958px;
     }
 }
 
 @media (min-width: 1200px) {
-    .gallery {
-        max-width: 1013px;
+    .gallery__box{
+        max-width:calc(1013px + 2*16px);
         height: 1020px;
     }
 }
-
-
 
 .slick-carousel {
     position: fixed;
@@ -37,19 +38,12 @@
 
 .gallery-photo {
     width: 100%;
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     border-radius: 7.5px;
 }
 
-
-
-
 @media (min-width: 768px) {
     .slick-carousel {
-        transform: translateY(-50%);
+        transform: translateY(-164px);
     }
 
     .gallery-photo {
