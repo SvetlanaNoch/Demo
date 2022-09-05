@@ -1,3 +1,6 @@
+.section-about {
+  position: relative;
+}
 .about__label {
   width: 100%;
   font-weight: 700;
@@ -170,7 +173,7 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
-  z-index: 500;
+  z-index: 1500;
 }
 .backdrop.is-hidden {
   visibility: hidden;
