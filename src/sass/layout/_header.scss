@@ -82,7 +82,7 @@
         text-align: center;
         color: #000000;
         margin-left: 38px;
-        transition: background var(--transition-main);
+        transition: background var(--timing-function);
 
         &:hover {
             background: rgba(10, 136, 23, 1);
@@ -129,7 +129,7 @@
         line-height: 20px;
         color: #FCFCFC;
         text-decoration: none;
-        transition: color var(--transition-main);
+        transition: color var(--timing-function);
 
         &:hover,
         &:focus {
