@@ -124,39 +124,6 @@ body {
     }
 }
 
-.products__card-thumb {
-    display: none;
-    position: absolute;
-    
-    left: 50%;
-    transform: translate(-50%, 0);
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 49px;
-    
-    border-radius: 50%;
-    overflow: hidden;
-    z-index: 900;
-
-        @media screen and (max-width: 767px) {
-            top: -108px;
-            width: 196px;
-            height: 195px;
-            }
-
-        @media screen and (min-width: 768px) {
-            top: -120px;
-            width: 198px;
-            height: 196px;
-        }
-        
-        @media screen and (min-width: 1200px) {
-            width: 300px;
-            height: 300px;
-            top: -183px;
-        }
-}
-
 
 .products__card-ice-coffee::before,
 .products__card-ice-cream::before,
@@ -246,11 +213,9 @@ body {
             background-image: url(../images/Desktop/products/icecream-coffee@2x.png);
             }
     }
-        
 }
 
 .products__card-ice-cream::after {
-
 @media screen and (max-width:1199px) {
         background-image: url(../images/Tablet/products/ice-cream-tablet.png);
 
@@ -270,7 +235,6 @@ body {
             background-image: url(../images/Desktop/products/icecream-first@2x.png);
         }
     }
-
 }
 
 .products__card-milkshakes::after {
@@ -294,8 +258,6 @@ body {
             background-image: url(../images/Desktop/products/milkshake@2x.png);
         }
     }
-
-
 }
 
 
@@ -331,7 +293,6 @@ body {
 }
 .products__card-text {
     padding: 0;
-    
 
     font-family: var(--main-font-family);
     font-style: normal;
