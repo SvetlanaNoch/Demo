@@ -251,3 +251,72 @@
     line-height: 27px;
   }
 }
+.modal {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+}
+.modal__container {
+  position: relative;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.modal-close-btn {
+  position: absolute;
+  padding: 0;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  border: none;
+}
+.modal__title {
+  font-family: "Seymour One";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #131313;
+}
+.modal__text {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #131313;
+}
+
+@media screen and (min-width: 768px) {
+  .modal__container {
+    padding: 32px 60px;
+    gap: 32px;
+  }
+  .modal-close-btn {
+    top: 20px;
+    right: 20px;
+  }
+  .modal__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .modal__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  
+}
