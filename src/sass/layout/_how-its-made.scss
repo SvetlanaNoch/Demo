@@ -267,6 +267,7 @@
     opacity: 0;
     pointer-events: none;
     transform: translateY(100%) scale(4);
+  }
 }
 .modal__container {
   position: relative;
@@ -327,7 +328,7 @@
 
 .modal.is-hidden {
   visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(100%) scale(4);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(100%) scale(4);
 }
