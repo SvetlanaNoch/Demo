@@ -1,1 +1,70 @@
-<section> modal-franchise </section>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="backdrop-button" data-modal-close>
+      <svg class="backdrop-button__icon" width="9px" height="9px">
+        <use href="./images/sprite.svg#icon-modal-close-btn"></use>
+      </svg>
+    </button>
+
+    <form class="contact-form">
+      <h2 class="contact-form__title">
+        Thank you for your interest in owning an Ice Cream shop
+      </h2>
+      <p class="contact-form__explanation">
+        Due to the overwhelming volume of franchise requests we are not
+        accepting new franchisee applications at this time. Once the application
+        process resumes, we will contact you for further information. Please
+        fill out the contact information below and we will reach out for
+        additional information. We appreciate your patience.
+      </p>
+
+      <span class="contact-form__input-wrapper">
+        <input
+          type="text"
+          name="user-name"
+          class="contact-form__input"
+          placeholder="Name"
+          required
+          pattern="[a-z A-Z а-я А-Я]+"
+          minlength="2"
+        />
+      </span>
+
+      <span class="contact-form__input-wrapper">
+        <input
+          type="tel"
+          name="user-fon"
+          class="contact-form__input"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
+          placeholder="Phone"
+        />
+      </span>
+
+      <span class="contact-form__input-wrapper">
+        <input
+          type="email"
+          name="user-email"
+          class="contact-form__input"
+          required
+          pattern=""
+          placeholder="Email"
+        />
+      </span>
+
+      <span
+        class="contact-form__input-wrapper contact-form__input-wrapper_margnone"
+      >
+        <textarea
+          name="user-message"
+          class="form-message"
+          placeholder="Comment"
+        >
+        </textarea>
+      </span>
+
+      <button type="submit" class="contact-form__submit">Submit</button>
+    </form>
+  </div>
+</div>
