@@ -5,10 +5,14 @@
     background-size: cover;
 }
 
+// div {
+//     padding: 0;
+//     margin: 0;
+// }
+
 .gallery__box{
     position: relative;
     width: 100%;
-    max-width:calc(280px + 0*20px);
     margin-left: auto;
     margin-right: auto;
 }
@@ -19,14 +23,13 @@
 
 @media (min-width: 768px) {
     .gallery__box{
-        max-width:calc(704px + 2*32px);
         height: 958px;
     }
 }
 
 @media (min-width: 1200px) {
     .gallery__box{
-        max-width:calc(1013px + 2*16px);
+        max-width:calc(1013px + 0*16px);
         height: 1020px;
     }
 }
@@ -38,7 +41,7 @@
     transform: translateY(-24px);
 }
 
-.gallery-photo {
+.gallery__photo {
     width: 100%;
     border-radius: 7.5px;
 }
