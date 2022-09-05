@@ -3,13 +3,12 @@
     background-image: url(../images/Desktop/products/background-ice-cream@2x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: center;
 }
 
 .gallery__box{
     position: relative;
     width: 100%;
-    max-width: 280px;
+    max-width:calc(280px + 2 * 20px);
     margin-left: auto;
     margin-right: auto;
 }
@@ -20,14 +19,14 @@
 
 @media (min-width: 768px) {
     .gallery__box{
-        max-width: 704px;
+        max-width:calc(704px + 2*32px);
         height: 958px;
     }
 }
 
 @media (min-width: 1200px) {
     .gallery__box{
-        max-width: 1013px;
+        max-width:calc(1013px + 2*16px);
         height: 1020px;
     }
 }
@@ -39,10 +38,6 @@
 
 .gallery-photo {
     width: 100%;
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     border-radius: 7.5px;
 }
 
