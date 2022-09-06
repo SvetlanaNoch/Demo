@@ -1,3 +1,8 @@
+.customer-reviews-section {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+}
 .customer-reviews {
   position: absolute;
   width: 1px;
@@ -12,14 +17,20 @@
 }
 
 .customer-reviews__container {
-  background-image: url(../images/Mobile/customer-reviews/frame18.svg);
+  // background-image: url(../images/Mobile/customer-reviews/frame18.svg);
   background-repeat: no-repeat;
   background-size: contain;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 80px;
+  // padding-top: 80px;
   padding-left: 20px;
   padding-right: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -859px;
+
+  width: 100%;
 }
 
 .customer-reviews__slide {
@@ -103,15 +114,18 @@
 }
 
 @media screen and (min-width: 480px) {
-  .customer-reviews__text {
-    width: 440px;
+  .customer-reviews__container {
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .customer-reviews__container {
     width: 768px;
-    height: 959px;
-    padding-top: 60px;
+    // height: 959px;
+    // padding-top: 60px;
+    top: -736px;
+    padding-left: 31px;
+    padding-right: 31px;
   }
   .customer-reviews__text {
     font-weight: 500;
@@ -141,8 +155,11 @@
 @media screen and (min-width: 1200px) {
   .customer-reviews__container {
     width: 1200px;
-    height: 1053px;
-    padding-top: 128px;
+    // height: 1053px;
+    // padding-top: 128px;
+    top: -557px;
+    padding-left: 116px;
+    padding-right: 116px;
   }
   .customer-reviews__text {
     width: 968px;
