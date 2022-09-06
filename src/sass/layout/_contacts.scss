@@ -10,12 +10,13 @@
 }
 
 
-// .contacts{
-//     position: absolute;
-//     z-index: 10;
-//    bottom: -300px;
+.contacts {
+    position: absolute;
+    z-index: 10000;
+    margin-top: -347px;
+}
 
-// }
+
 
 .container {
 
@@ -26,11 +27,12 @@
 .card-set {
     display: flex;
     flex-direction: column;
+    
     gap: 20px;
 
 
     &__card {
-
+        height: 412px;
         padding: 40px 32px;
         background: #FCFCFC;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -81,7 +83,7 @@
 
 .address__street {
     margin-bottom: 24px;
-
+    height: 36px;
     font-family: var(--main-font-family);
     font-style: normal;
     font-weight: 500;
@@ -151,8 +153,9 @@
 .location {
     width: 196px;
     height: 42px;
+    border: none;
 
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     background: var(--main-button-color);
     border-color: var(--main-button-color);
     border-radius: 10px;
@@ -226,6 +229,9 @@
 // }
 
 @media screen and (min-width: 768px) {
+    .contacts {           
+            margin-top: -302px;
+        }
 
     .container {
         width: 768px;
@@ -238,6 +244,7 @@
         gap: 16px;
 
         &__card {
+            height: 528px;
             width: 224px;
             padding: 40px 27px 40px 24px;
             background: var(--white);
@@ -263,6 +270,7 @@
     }
 
     .address__street {
+        height: 65px;
         margin-bottom: 26px;
         font-size: 14px;
     }
@@ -302,7 +310,7 @@
         justify-content: center;
         gap: 16px;
         align-items: baseline;
-        margin-top: 64px;
+        margin-top: 60px;
     }
 
     .location {
@@ -316,17 +324,26 @@
 
 
 @media screen and (min-width: 1200px) {
-    .container {
+   
+        .contacts{
+            margin-top: -96px;
+        }
+
+         .container {
         width: 1200px;
         padding-left: 16px;
         padding-right: 16px;
     }
 
+       
+
     .card-set {
+        height: 538px;
         gap: 32px;
 
         &__card {
             width: 368px;
+            height: 538px;
             padding: 40px;
         }
     }
@@ -344,6 +361,8 @@
     }
 
     .address__street {
+       
+        height: 50px;
         margin-bottom: 32px;
         font-size: 16px;
     }
@@ -362,6 +381,7 @@
     }
 
     .mail-tel {
+        
 
         &__h {
             font-size: 16px;
