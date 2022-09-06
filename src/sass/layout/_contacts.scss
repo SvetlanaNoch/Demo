@@ -24,6 +24,11 @@
     padding-right: 20px;
 }
 
+.contacts-modal{
+    z-index: 100;
+    position: relative;
+}
+
 .card-set {
     display: flex;
     flex-direction: column;
