@@ -68,6 +68,9 @@
     }
 
     .mobile-menu__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: rgba(248, 210, 78, 1);
         border: none;
         border-radius: 10px;
@@ -88,6 +91,10 @@
             background: rgba(10, 136, 23, 1);
             color: white;
         }
+    }
+    .mobile-menu__button-icon {
+        margin-left: 11px;
+        fill: currentColor;
     }
 
 }
