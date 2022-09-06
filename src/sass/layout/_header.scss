@@ -21,8 +21,8 @@
     }
 
     .header__logo-img {
-        width: 40px;
-        height: 37px;
+        width: 37px;
+        height: 40px;
     }
 
     .mobile-menu-open {
@@ -53,8 +53,8 @@
     }
 
     .header__logo-img {
-        width: 48px;
-        height: 44px;
+        width: 44px;
+        height: 48px;
     }
 
     .header__buttons {
@@ -71,6 +71,9 @@
     }
 
     .header__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: rgba(248, 210, 78, 1);
         border: none;
         border-radius: 10px;
@@ -92,6 +95,10 @@
             background: rgba(10, 136, 23, 1);
             color: white;
         }
+    }
+    .header__button-icon {
+        margin-left: 11px;
+        fill: currentColor;
     }
 }
 
