@@ -26,8 +26,18 @@ svg {
 
 a {
   text-decoration: none;
+
+&:hover,
+&:focus {
+  cursor: url(../images/cursor.png), auto;
+}
 }
 
 address {
   font-style: normal;
+}
+
+button:hover,
+button:focus {
+  cursor: url(../images/cursor.png), auto;
 }

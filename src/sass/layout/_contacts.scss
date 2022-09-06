@@ -90,11 +90,11 @@
     letter-spacing: 0.04em;
     color: #D6936D;
 
-    // &:hover,
-    // &:focus {
-    //     text-decoration-line: underline;
-    //     cursor: url("/img/cursor.png"), auto;
-    // }
+    &:hover,
+    &:focus {
+        text-decoration-line: underline;
+        cursor: url("../images/cursor.png"), auto;
+    }
 }
 
 .working-mode {
@@ -156,7 +156,7 @@
     background: var(--main-button-color);
     border-color: var(--main-button-color);
     border-radius: 10px;
-
+    border: none;
     font-family: var(--main-font-family);
     font-style: normal;
     font-weight: 600;
@@ -218,6 +218,12 @@
 .Franchise:focus .contacts-button-svg {
     fill: var(--franchise-button-color);
 }
+
+// .is-hidden {
+//     opacity: 0;
+//     visibility: hidden;
+//     pointer-events: none;
+// }
 
 @media screen and (min-width: 768px) {
 
