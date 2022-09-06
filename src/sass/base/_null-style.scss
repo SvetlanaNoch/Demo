@@ -29,7 +29,7 @@ a {
 
 &:hover,
 &:focus {
-  cursor: url(/src/images/cursor.png), auto;
+  cursor: url(../images/cursor.png), auto;
 }
 }
 
@@ -39,5 +39,5 @@ address {
 
 button:hover,
 button:focus {
-  cursor: url(/src/images/cursor.png), auto;
+  cursor: url(../images/cursor.png), auto;
 }
