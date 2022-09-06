@@ -1,8 +1,9 @@
 .gallery {
     position: relative;
     background-image: url(../images/Desktop/products/background-ice-cream@2x.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: 50%;
 }
 
 // div {
