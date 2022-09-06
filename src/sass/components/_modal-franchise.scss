@@ -11,20 +11,6 @@
 
 
 
-.modal {
-    position: absolute;
-    z-index: 1000000000000000000000000000000000000000000;
-    width: 280px;
-    height: 664px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 28px;
-
-    background: var(--franchise-button-color);
-    border: 2px solid var(--main-button-color);
-    border-radius: 10px;
-}
 
 .backdrop-button {
     position: absolute;
@@ -60,7 +46,20 @@
 }
 
 
+.modal {
+    position: absolute;
+    z-index: 1000;
+    width: 280px;
+    height: 664px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 28px;
 
+    background: var(--franchise-button-color);
+    border: 2px solid var(--main-button-color);
+    border-radius: 10px;
+}
 
 .contact-form {
     display: flex;
@@ -97,23 +96,23 @@
     border: 1px solid var(--background-color);
     border-radius: 10px;
     margin-bottom: 12px;
-    padding: 8px 12px 7px 12px;   
+      
 }
 
 .contact-form__input{
     width: 100%;
-    box-sizing: border-box;
-  
-    padding: 0;
+    box-sizing: border-box;  
+    padding: 8px 12px 7px 12px;
+    border-radius: 10px;
     border: none;
     
     background: transparent;
-    font-family: 'Montserrat';
+    font-family: var(--main-font-family);
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
         line-height: 140%;    
-        color: #131313;
+        color: var(--secondary-black-color);
         
 }
 
@@ -124,12 +123,12 @@
     resize: none;   
         border: none;
         background: transparent;
-        font-family: 'Montserrat';
+        font-family: var(--main-font-family);
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
         line-height: 140%;    
-        color: #131313;    
+        color: var(--secondary-black-color);    
 }
 
 .contact-form__input-wrapper_margnone{
@@ -159,11 +158,11 @@
 
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
     .modal {
 
-        width: 528px;
-        height: 581px;
+        width: 568px;
+        height: 668px;
     }
 }
 

@@ -12,7 +12,8 @@
 
 .contacts {
     position: absolute;
-    z-index: 10000;
+    width: 100%;  
+    z-index: 100;
     margin-top: -347px;
 }
 
@@ -24,10 +25,10 @@
     padding-right: 20px;
 }
 
-.contacts-modal{
-    z-index: 100;
-    position: relative;
-}
+// .contacts-modal{
+//     z-index: 100;
+//     position: relative;
+// }
 
 .card-set {
     display: flex;
@@ -148,6 +149,8 @@
 }
 
 .contacts-button {
+    
+        gap: 6px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,6 +159,10 @@
 
 
 .location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
     width: 196px;
     height: 42px;
     border: none;
@@ -191,14 +198,13 @@
 }
 
 
-.button-inscrip {
+
+
+.franchise {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 6px;
-}
-
-
-.Franchise {
     width: 196px;
     height: 42px;
 
@@ -223,7 +229,7 @@
     }
 }
 
-.Franchise:focus .contacts-button-svg {
+.franchise:focus .contacts-button-svg {
     fill: var(--franchise-button-color);
 }
 
