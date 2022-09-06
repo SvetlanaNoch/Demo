@@ -1,0 +1,64 @@
+<div class="backdrop is-hidden" data-modal-products> 
+    <div class="modal-window">
+      <h3 class="modal-products_title"  >Chololate icecream</h3>
+        <button type="button" class="modal-close-btn button" data-modal-close-products>
+            <svg class="modal-close-btn-icon" width="11" height="11">
+                <use href="./images/sprite.svg#icon-modal-close-btn"></use>
+            </svg>
+        </button>
+        <img src="./images/Desktop/modal-products/modal-products-icecream/Group 113@2x.png" alt="ice-cream" class="modal-products_img">
+        <ul class="modal-products_list">
+          <li class="modal-products_list-item"><img src="./images/Desktop/modal-products/modal-products-ovals/Group 405@2x.png" alt="" width="65" height="80">
+          </li>
+          <li class="modal-products_list-item"><img src="./images/Desktop/modal-products/modal-products-ovals/Group 406@2x.png" alt=""width="65" height="80"></li>
+          <li class="modal-products_list-item"><img src="./images/Desktop/modal-products/modal-products-ovals/Group 407@2x.png" alt=""width="65" height="80"></li>
+          <li class="modal-products_list-item"><img src="./images/Desktop/modal-products/modal-products-ovals/Group 408@2x.png" alt=""width="65" height="80"></li>
+        </ul>
+        <p class="modal-products_ingridients">Ingredients</p>
+        <ul class="modal-products_ingridients_list">
+          <li class="modal-products_ingridient-list_item">Milk<span class="modal-products_ingridients-list_item">------------------------------------------------------------------</span>100ml</li>
+          <li class="modal-products_ingridient-list_item">Belgian chocolate<span class="modal-products_ingridients-list_item">---------------------------------------------------</span>20g </li>
+          <li class="modal-products_ingridient-list_item">Cream<span class="modal-products_ingridients-list_item">--------------------------------------------------------------.</span>150 ml</li>
+          <li class="modal-products_ingridient-list_item">Cocoa powder<span class="modal-products_ingridients-list_item">--------------------------------------------------------</span>30g</li>
+          <li class="modal-products_ingridient-list_item">Sugar<span class="modal-products_ingridients-list_item">------------------------------------------------------------------.</span>40g</li>
+          <li class="modal-products_ingridient-list_item">Vanilla sugar<span class="modal-products_ingridients-list_item">----------------------------------------------------------.</span>10g</li>
+        </ul>
+        <form class="modal-form">
+          <label class="modal-form-field">
+            <span class="modal-form-input-box">
+              <input
+                type="text"
+                name="user_name"
+                class="modal-form-input"
+                required
+                pattern="[a-zA-Zа-яА-Я]+"
+                minlength="2"
+                placeholder="&nbsp;&nbsp;&nbsp;Name"
+              />
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-input-box">
+              <input
+                type="tel"
+                name="user_phone"
+                class="modal-form-input"
+                required
+                pattern="[0-9]{10}"
+                minlength="10"
+                placeholder="&nbsp;&nbsp;&nbsp;Phone"
+              />
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-input-box">
+              <textarea
+                name="user_comment"
+                class="modal-form-comment"
+                placeholder="&nbsp;&nbsp;&nbsp;Comment"
+              ></textarea>
+            </span>
+          </label>
+          <button type="submit" class="modal-form-submit">Submit</button>
+        </form>
+    </div>
