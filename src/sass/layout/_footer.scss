@@ -61,12 +61,14 @@
 
 .icon-link__svg {
     fill: #84A178;
+
 }
 
 .icon-link:hover .icon-link__svg,
 .icon-link:focus .icon-link__svg {
     fill: var(--franchise-button-color);
     transform: scale(1.09);
+    transition: fill var(--timing-function);
 }
 
 .footer-contact {

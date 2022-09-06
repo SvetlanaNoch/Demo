@@ -20,15 +20,11 @@
 
 
 .container {
-
     padding-left: 20px;
     padding-right: 20px;
 }
 
-// .contacts-modal{
-//     z-index: 100;
-//     position: relative;
-// }
+
 
 .card-set {
     display: flex;
@@ -143,14 +139,14 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 1.5;
-        color: #131313;
+        color: var(--secondary-black-color);
     }
 
 }
 
 .contacts-button {
     
-        gap: 6px;
+    gap: 6px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,19 +178,23 @@
     &:hover {
         background-color: #0A8817;
         border-color: #0A8817;
+        transition: background-color var(--timing-function), border-color var(--timing-function) ;
     }
 
     &:focus {
         color: var(--franchise-button-color);
+        transition: color var(--timing-function);
     }
 }
 
 .contacts-button-svg {
     fill: var(--secondary-black-color);
+    transition: fill var(--timing-function);
 }
 
 .location:focus .contacts-button-svg {
     fill: var(--franchise-button-color);
+    transition: fill var(--timing-function);
 }
 
 
@@ -222,22 +222,21 @@
 
     &:hover {
         border-color: #0A8817;
+        transition: border-color var(--timing-function);
     }
 
     &:focus {
         color: var(--franchise-button-color);
+        transition: color var(--timing-function);
     }
 }
 
 .franchise:focus .contacts-button-svg {
     fill: var(--franchise-button-color);
+    transition: fill var(--timing-function);
 }
 
-// .is-hidden {
-//     opacity: 0;
-//     visibility: hidden;
-//     pointer-events: none;
-// }
+
 
 @media screen and (min-width: 768px) {
     .contacts {           
