@@ -1,71 +1,69 @@
 /*---------MOBILE---------------*/
 @media screen and (max-width: 767px) {
-    .modal-window {
+    .buy-now__modal-window {
         position: absolute;
+        width: 280px;
+        border-radius: 10px;
+        border: 2px solid #F8D24E;
+        background-color: var(--white);
+        padding: 28px 30px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: calc(100% - 30px);
-        min-width: 280px;
-        max-width: 450px;
-        background-color: #FFFFFF;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-        padding: 40px;
 
     }
 
-    .modal-close-btn {
+    .buy-now__modal-close-btn {
         position: absolute;
         top: 8px;
         right: 8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
         background-color: #FFFFFF;
-        border: 1px solid rgba(0, 0, 0, 0.1);
+        border: none;
         padding: 0;
+    }
+    .buy-now__modal-close-btn-icon {
+        width: 9px;
+        height: 9px;
     }
 }
 
 /*-----------TABLET--------------*/
 @media screen and (min-width: 768px) {
-    .modal-window {
+    .buy-now__modal-window {
         position: absolute;
+        width: 568px;
+        border-radius: 10px;
+        border: 2px solid #F8D24E;
+        background-color: var(--white);
+        padding: 32px 54px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 568px;
-        background-color: #FFFFFF;
-        border: 2px solid #F8D24E;
-        border-radius: 10px;
-        padding: 32px 54px;
     }
 
-    .modal-close-btn {
+    .buy-now__modal-close-btn {
         position: absolute;
         top: 20px;
         right: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 20px;
-        height: 20px;
         background-color: #FFFFFF;
         border: none;
         padding: 0;
     }
+     .buy-now__modal-close-btn-icon {
+        width: 11px;
+        height: 11px;
+    }
 }
+/*-----------MODAL FORM------------*/ 
+/*---------MOBILE---------------*/
+/*
 @media screen and (max-width: 767px) {
-    .modal-form {
+    .buy-now__modal-form {
         display: flex;
         flex-direction: column;
     }
 
-    .modal-form-title {
+    .buy-now__modal-form-title {
         font-family: var(--title-font-family);
         font-weight: 700;
         font-size: 20px;
@@ -73,13 +71,43 @@
         text-align: center;
         letter-spacing: 0.03em;
         color: #212121;
+        margin-bottom: 20px;
+    }
+    .buy-now__products-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .buy-now__products-item {
+        position: relative;
+    }
+    .buy-now__title-box {
+        width: 132px;
+        height: 136px;
+        border: 2px solid #96AF8C;
+        filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+        border-radius: 16px;
+        padding-bottom: 20px;
+        
+    }
+    .buy-now__products-title {
+        font-family: var(--main-font-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #131313;
+        text-align: center;  
     }
 
-    .modal-form-field {
+    .buy-now__modal-form-field {
         margin-bottom: 10px;
     }
 
-    .modal-form-input {
+    .buy-now__modal-form-input {
         width: 100%;
         height: 40px;
         border: 1px solid rgba(33, 33, 33, 0.2);
@@ -97,7 +125,7 @@
     }
 
 
-    .modal-form-input-description {
+    .buy-now__modal-form-input-description {
         font-weight: 400;
         font-size: 12px;
         line-height: 1.17;
@@ -107,23 +135,12 @@
         margin-bottom: 4px;
     }
 
-    .modal-form-input-box {
+    .buy-now__modal-form-input-box {
         position: relative;
     }
 
-    .modal-field-icon {
-        position: absolute;
-        top: 50%;
-        left: 12px;
-        transform: translateY(-50%);
-        transition: fill var(--transition-main);
-    }
 
-    .modal-form-input:focus+.modal-form-input-icon {
-        fill: var(--accent-color);
-    }
-
-    .modal-form-comment {
+    .buy-now__modal-form-comment {
         width: 100%;
         height: 120px;
         padding: 12px 16px;
@@ -147,56 +164,8 @@
         }
     }
 
-    .policy-check-field {
-        display: flex;
-        margin-bottom: 30px;
-        align-items: center;
-        justify-content: center;
-        margin-top: 6px;
-    }
 
-    .check-box-icon {
-        display: inline-block;
-        width: 16px;
-        height: 15px;
-        margin-right: 8px;
-        border: 2px solid rgba(33, 33, 33, 1);
-        border-radius: 4px;
-        position: relative;
-        transition: background-color var(--transition-main);
-    }
-
-    .check-mark {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .check-box-description {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: #757575;
-    }
-
-    .policy-link {
-        color: rgba(33, 150, 243, 1);
-    }
-
-    .check-box:checked+.check-box-icon {
-        background-color: var(--accent-color);
-        border-color: transparent;
-
-    }
-
-    .check-box {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-    }
-
-    .modal-form-submit {
+    .buy-now__modal-form-submit {
         padding: 0;
         margin: 0;
         width: 150px;
@@ -226,149 +195,215 @@
 
 /*-----------TABLET--------------*/
 @media screen and (min-width: 768px) {
-    .modal-form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .modal-form-title {
+    
+    .buy-now__modal-form-title {
         font-family: var(--title-font-family);
-        font-weight: 700;
+        font-weight: 400;
         font-size: 20px;
-        line-height: 1.15;
+        line-height: 1.4;
         text-align: center;
         letter-spacing: 0.03em;
         color: #212121;
-        margin-bottom: 12px;
     }
-
-    .modal-form-field {
-        margin-bottom: 10px;
-    }
-
-    .modal-form-input {
-        width: 100%;
-        height: 40px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 4px;
-        transition: border-color var(--transition-main);
-        padding-left: 42px;
-        padding-top: 16px;
-        padding-bottom: 16px;
-
-        &:focus {
-            outline: none;
-            border-color: var(--accent-color);
-            cursor: pointer;
-        }
-    }
-
-    .modal-form-input-description {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.01em;
-        color: #757575;
-        display: block;
-        margin-bottom: 4px;
-    }
-
-    .modal-form-input-box {
-        position: relative;
-    }
-
-    .modal-field-icon {
-        position: absolute;
-        top: 50%;
-        left: 12px;
-        transform: translateY(-50%);
-        transition: fill var(--transition-main);
-    }
-
-    .modal-form-input:focus+.modal-form-input-icon {
-        fill: var(--accent-color);
-    }
-
-    .modal-form-comment {
-        width: 100%;
-        height: 120px;
-        padding: 12px 16px;
-        resize: none;
-        border-radius: 4px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        transition: border-color var(--transition-main);
-
-        &::placeholder {
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 14px;
-            letter-spacing: 0.01em;
-            color: rgba(117, 117, 117, 0.5);
-        }
-
-        &:focus {
-            border-color: var(--accent-color);
-            outline: none;
-            cursor: pointer;
-        }
-    }
-
-    .policy-check-field {
+    .buy-now__products-list {
         display: flex;
-        margin-bottom: 30px;
-        align-items: center;
         justify-content: center;
-        margin-top: 6px;
-
-        &:focus,
-        &:hover {
-            cursor: pointer;
-        }
+        gap: 32px;
     }
-
-    .check-box-icon {
-        width: 16px;
-        height: 15px;
-        margin-right: 8px;
-        border: 2px solid rgba(33, 33, 33, 1);
-        border-radius: 4px;
+    
+    .buy-now__products-card {
         position: relative;
-        transition: background-color var(--transition-main);
+        display: block;
+        width: 132px;
+        height: 135px;
+        border-radius: 16px;
+        margin-top: 103px;
+        margin-bottom: 40px;
+        }
+    
+    
+    .buy-now__products-card-ice-coffee::before,
+    .buy-now__products-card-ice-cream::before,
+    .buy-now__products-card-milkshakes::before {
+    
+            left: 50%;
+            transform: translate(-50%, 0);
+            position: absolute;
+            content: "";
+            width: 132px;
+            height: 132px;
+            border-radius: 50%;
+            z-index: 400;
+            top: -60px;
+    
+        }
+    
+        .buy-now__products-card-ice-cream::before {
+            background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+        }
+        .buy-now__products-card-ice-coffee::before {
+            background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+        }
+    
+        .buy-now__products-card-milkshakes::before {
+            background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+        }
+    
+    
+        .buy-now__products-card-ice-cream::after,
+        .buy-now__products-card-ice-coffee::after,
+        .buy-now__products-card-milkshakes::after {
+            left: 50%;
+            background-size: cover;
+            transform: translate(-50%, 0);
+            position: absolute;
+            content: "";
+            width: 132px;
+            height: 132px;
+            border-radius: 50%;
+            z-index: 600;
+            top: -67px;
+        }
+    
+        .buy-now__products-card-ice-coffee::after {
+            @media screen and (max-width:1199px) {
+                background-image: url(../images/Tablet/products/ice-cream-coffee-tablet.png);
+    
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background-image: url(../images/Tablet/products/ice-cream-coffee-tablet@2x.png);
+                }
+            }
+    
+            @media screen and (min-width:1200px) {
+                background-image: url(../images/Desktop/products/icecream-coffee.png);
+    
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background-image: url(../images/Desktop/products/icecream-coffee@2x.png);
+                }
+            }
+        }
+    
+        .buy-now__products-card-ice-cream::after {
+            @media screen and (max-width:1199px) {
+                background-image: url(../images/Tablet/products/ice-cream-tablet.png);
+    
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background-image: url(../images/Tablet/products/ice-cream-tablet@2x.png);
+                }
+            }
+    
+            @media screen and (min-width:1200px) {
+                background-image: url(../images/Desktop/products/icecream-first.png);
+    
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background-image: url(../images/Desktop/products/icecream-first@2x.png);
+                }
+            }
+        }
+    
+        .buy-now__products-card-milkshakes::after {
+    
+            @media screen and (max-width:1199px) {
+                background-image: url(../images/Tablet/products/milkshake-tablet.png);
+    
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background-image: url(../images/Tablet/products/milkshake-tablet.@2x.png);
+                }
+            }
+    
+            @media screen and (min-width:1200px) {
+                background-image: url(../images/Desktop/products/milkshake.png);
+    
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background-image: url(../images/Desktop/products/milkshake@2x.png);
+                }
+            }
+        }
+    
+    
+        .buy-now__products-card-footer {
+            text-align: center;
+        }
+    
+        .buy-now__products-card-title {
+            font-family: var(--main-font-family);
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.23;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--secondary-black-color);
+            font-size: 16px;
+            padding-top: 95px;
+            padding-bottom: 20px;
+        }
 
+        .buy-now__products-card-ice-cream {
+            border: 2px solid #96AF8C;
+            filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+        }
+    
+        .buy-now__products-card-ice-coffee {
+            background-color: #EFD478;
+        }
+
+        .buy-now__products-card-milkshakes {
+            border: 2px solid #D6936D;
+            filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+        }
+    
+    .buy-now__modal-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        }
+    
+    .buy-now__modal-form-field {
+        margin-bottom: 16px;
     }
-
-    .check-mark {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .check-box-description {
+    .buy-now__modal-form-input {
+        background: rgba(248, 210, 78, 0.1);
+        border: 1px solid #84A178;
+        border-radius: 10px;
+        width: 368px;
+        height: 42px;
+        padding-left: 16px;
         font-weight: 400;
-        font-size: 12px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: #757575;
+        font-size: 14px;
+        line-height: 140%;
+        color: #131313;
+    }
+    .buy-now__modal-form-comment {
+        background: rgba(248, 210, 78, 0.1);
+        border: 1px solid #84A178;
+        border-radius: 10px;
+        width: 368px;
+        height: 84px;
+        padding-left: 16px;
+        padding-top: 11px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: #131313;
     }
 
-    .policy-link {
-        color: rgba(33, 150, 243, 1);
-    }
-
-    .check-box:checked+.check-box-icon {
-        background-color: var(--accent-color);
-        border-color: transparent;
-
-    }
-
-
-    .check-box {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-    }
-
-    .modal-form-submit {
+    .buy-now__modal-form-submit {
         padding: 0;
         margin: 0;
         width: 150px;
@@ -379,7 +414,7 @@
         border: none;
         border-radius: 10px;
         align-self: center;
-        font-size: 12px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 600;
         line-height: 1.25;
@@ -393,12 +428,5 @@
                 background: rgba(10, 136, 23, 1);
                 color: white;
             }
-    }
-}
-
-/*---------------DESKTOP-----------------*/
-@media screen and (min-width: 1200px) {
-    .check-box-description {
-        font-size: 14px;
     }
 }
