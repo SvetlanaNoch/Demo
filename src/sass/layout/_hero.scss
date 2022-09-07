@@ -50,7 +50,7 @@
     .hero {
         display: flex;
         width: 100%;
-        // max-width: calc(768px - 0*16px);
+        max-width: calc(768px - 0*16px);
         background-image: url(../images/Tablet/hero/dots-tablet@2x.png);
     }
 }
@@ -359,7 +359,7 @@
 @media screen and (min-width: 1200px) {
     .hero__icecream-smile {
         /* bottom: -5px; */
-        // left: calc(666px - 0*16px);
+        left: calc(666px - 0*16px);
     }
 }
 
