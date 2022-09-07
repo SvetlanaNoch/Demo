@@ -1,37 +1,34 @@
 .gallery {
     position: relative;
     background-image: url(../images/Desktop/products/background-ice-cream@2x.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: 50%;
 }
 
-// div {
-//     padding: 0;
-//     margin: 0;
-// }
-
-.gallery__box{
+.gallery__box {
     position: relative;
     width: 100%;
+    height: 1027px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.gallery__title {
-    display: none;
-}
-
 @media (min-width: 768px) {
-    .gallery__box{
+    .gallery__box {
         height: 958px;
     }
 }
 
 @media (min-width: 1200px) {
-    .gallery__box{
-        max-width:calc(1013px + 0*16px);
+    .gallery__box {
+        max-width: 1013px;
         height: 1020px;
     }
+}
+
+.gallery__title {
+    display: none;
 }
 
 .slick-carousel {
@@ -43,6 +40,7 @@
 
 .gallery__photo {
     width: 100%;
+    height: 130px;
     border-radius: 7.5px;
 }
 
@@ -53,6 +51,7 @@
 
     .gallery__photo {
         border-radius: 18px;
+        height: 327px;
     }
 }
 
@@ -62,6 +61,7 @@
     }
 
     .gallery__photo {
+        height: 422px;
         border-radius: 24px;
     }
 }

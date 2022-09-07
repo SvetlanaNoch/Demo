@@ -1,17 +1,20 @@
 .footer {
     position: relative;
+    width: 100%;
+    padding-top: 1093px;    
     background: #84A178;
 }
+
 
 .container {
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.footer__container {
-    padding-top: 1101px;
-}
 
+.footer-titles{
+    height: 194px;
+}
 
 .footer-titles__title1 {
     width: 232px;
@@ -58,12 +61,14 @@
 
 .icon-link__svg {
     fill: #84A178;
+
 }
 
 .icon-link:hover .icon-link__svg,
 .icon-link:focus .icon-link__svg {
     fill: var(--franchise-button-color);
     transform: scale(1.09);
+    transition: fill var(--timing-function);
 }
 
 .footer-contact {
@@ -120,24 +125,32 @@
 
 @media screen and (min-width: 768px) {
 
+    .footer {
+            
+            padding-top: 366px;
+            background: #84A178;
+        }
+
+
+
     .container {
         width: 768px;
         padding-left: 32px;
         padding-right: 32px;
     }
 
-    .footer__container {
-        padding-top: 350px;
-    }
+   
 
     .footer-titles__title1 {
         width: 352px;
-        margin-bottom: 9px;
+        margin-bottom: 9.5px;
         font-size: 26px;
         line-height: 1.23;
         letter-spacing: 0.04em;
         color: var(--white);
     }
+
+      
 
 
     .footer-titles__title2 {
@@ -151,7 +164,7 @@
 
 
     .footer-icons {
-        gap: 30px;
+        gap: 38.8px;
         margin-bottom: 32px;
     }
 
@@ -171,11 +184,12 @@
 
 
     .footer-copyright {
-        padding-top: 46px;
-        padding-bottom: 13px;
+        padding-top: 48px;
+        padding-bottom: 0px;
         padding-left: 0px;
         padding-right: 0px;
         line-height: 186%;
+        letter-spacing: 0.02em;
     }
 
     .footer__border {
@@ -201,15 +215,16 @@
 
 @media screen and (min-width: 1200px) {
 
+    .footer {     
+        padding-top: 596px;      
+                       
+            }
+
     .container {
         width: 1200px;
         padding-left: 16px;
         padding-right: 16px;
-    }
-
-    .footer__container {
-        padding-top: 668px;
-    }
+    }   
 
     .footer-titles__title1 {
         width: 504px;
@@ -264,6 +279,7 @@
     }
 
     .footer-title-contact {
+        
         gap: 326px;
     }
 

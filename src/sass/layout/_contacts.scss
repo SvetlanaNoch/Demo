@@ -10,27 +10,31 @@
 }
 
 
-// .contacts{
-//     position: absolute;
-//     z-index: 10;
-//    bottom: -300px;
+.contacts {
+    position: absolute;
+    width: 100%;  
+    z-index: 100;
+    margin-top: -347px;
+}
 
-// }
+
 
 .container {
-
     padding-left: 20px;
     padding-right: 20px;
 }
 
+
+
 .card-set {
     display: flex;
     flex-direction: column;
+    
     gap: 20px;
 
 
     &__card {
-
+        height: 412px;
         padding: 40px 32px;
         background: #FCFCFC;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -81,7 +85,7 @@
 
 .address__street {
     margin-bottom: 24px;
-
+    height: 36px;
     font-family: var(--main-font-family);
     font-style: normal;
     font-weight: 500;
@@ -135,12 +139,14 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 1.5;
-        color: #131313;
+        color: var(--secondary-black-color);
     }
 
 }
 
 .contacts-button {
+    
+    gap: 6px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,10 +155,15 @@
 
 
 .location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
     width: 196px;
     height: 42px;
+    border: none;
 
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     background: var(--main-button-color);
     border-color: var(--main-button-color);
     border-radius: 10px;
@@ -167,30 +178,33 @@
     &:hover {
         background-color: #0A8817;
         border-color: #0A8817;
+        transition: background-color var(--timing-function), border-color var(--timing-function) ;
     }
 
     &:focus {
         color: var(--franchise-button-color);
+        transition: color var(--timing-function);
     }
 }
 
 .contacts-button-svg {
     fill: var(--secondary-black-color);
+    transition: fill var(--timing-function);
 }
 
 .location:focus .contacts-button-svg {
     fill: var(--franchise-button-color);
+    transition: fill var(--timing-function);
 }
 
 
-.button-inscrip {
+
+
+.franchise {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 6px;
-}
-
-
-.Franchise {
     width: 196px;
     height: 42px;
 
@@ -208,24 +222,26 @@
 
     &:hover {
         border-color: #0A8817;
+        transition: border-color var(--timing-function);
     }
 
     &:focus {
         color: var(--franchise-button-color);
+        transition: color var(--timing-function);
     }
 }
 
-.Franchise:focus .contacts-button-svg {
+.franchise:focus .contacts-button-svg {
     fill: var(--franchise-button-color);
+    transition: fill var(--timing-function);
 }
 
-// .is-hidden {
-//     opacity: 0;
-//     visibility: hidden;
-//     pointer-events: none;
-// }
+
 
 @media screen and (min-width: 768px) {
+    .contacts {           
+            margin-top: -302px;
+        }
 
     .container {
         width: 768px;
@@ -238,6 +254,7 @@
         gap: 16px;
 
         &__card {
+            height: 528px;
             width: 224px;
             padding: 40px 27px 40px 24px;
             background: var(--white);
@@ -263,6 +280,7 @@
     }
 
     .address__street {
+        height: 65px;
         margin-bottom: 26px;
         font-size: 14px;
     }
@@ -302,7 +320,7 @@
         justify-content: center;
         gap: 16px;
         align-items: baseline;
-        margin-top: 64px;
+        margin-top: 60px;
     }
 
     .location {
@@ -316,17 +334,26 @@
 
 
 @media screen and (min-width: 1200px) {
-    .container {
+   
+        .contacts{
+            margin-top: -96px;
+        }
+
+         .container {
         width: 1200px;
         padding-left: 16px;
         padding-right: 16px;
     }
 
+       
+
     .card-set {
+        height: 538px;
         gap: 32px;
 
         &__card {
             width: 368px;
+            height: 538px;
             padding: 40px;
         }
     }
@@ -344,6 +371,8 @@
     }
 
     .address__street {
+       
+        height: 50px;
         margin-bottom: 32px;
         font-size: 16px;
     }
@@ -362,6 +391,7 @@
     }
 
     .mail-tel {
+        
 
         &__h {
             font-size: 16px;
