@@ -44,7 +44,7 @@
     // background-image: url(../images/Mobile/hero/dots-mobile@2x.png);
 }
 
-@media screen and (min-width: 480px) {}
+// @media screen and (min-width: 480px) {}
 
 @media screen and (min-width: 768px) {
     .hero {
@@ -305,27 +305,36 @@
         bottom: 111px;
     }
 
-    /* left: 50%;
-    transform: translate(-50%, 0);
-    fill: var(--secondary-black-color);
 
-    @media screen and (max-width: 767px) {
-        bottom: 20px;
-    }
+    
 
-    @media screen and (min-width: 768px) {
-        bottom: 20px;
-    }
 
-    @media screen and (min-width: 1200px) {
-        bottom: 60px;
-    } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 }
 
+
+//  @media screen and (min-width: 480px) {
 .hero__icecream-smile-block {
     display: flex;
-    z-index: 10;
+    // z-index: 100;
     /* background: rgba(252, 252, 252, 0.44);
     filter: blur(53.681px); */
 }
@@ -341,15 +350,17 @@
     filter: blur(53.681px);
     z-index: -1; */
 }
-
+//  }
 /* @media screen and (min-width: 480px) {} */
 
 @media screen and (min-width: 768px) {
     .hero__icecream-smile {
-        position: absolute;
-        bottom: -5px;
-        left: calc(418px - 32px);
-        z-index: 2;
+        left: -20px;
+        // position: absolute;
+        // bottom: -5px;
+        // left: calc(418px - 32px);
+
+        // z-index: 2;
 
         /* margin-left: auto;
                         margin-right: auto; */
@@ -358,41 +369,61 @@
 
 @media screen and (min-width: 1200px) {
     .hero__icecream-smile {
-        /* bottom: -5px; */
-        left: calc(666px - 0*16px);
+        bottom: -25px; 
+        left: 170px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 768px) {
     .hero__icecream {
         display: block;
 
         /* z-index: 0; */
-        z-index: 23;
+        // z-index: 23;
     }
 }
 
-.hero__icecream-shadow {
-    position: absolute;
-    top: -80px;
-    left: -40px;
-    z-index: 01;
+.hero__icecream {
+    display: block;
+
+    /* z-index: 0; */
+    // z-index: 23;
 }
 
-@media screen and (min-width: 768px) {
-    .hero__icecream-shadow {
-        left: -50px;
-        z-index: 0;
-    }
-}
+// .hero__icecream-shadow {
+//     position: absolute;
+//     top: -80px;
+//     left: -40px;
+//     // z-index: 01;
+// }
 
-@media screen and (min-width: 1200px) {
-    .hero__icecream-shadow {
-        top: -80px;
-        left: -70px;
-        z-index: 0;
-    }
-}
+// @media screen and (min-width: 768px) {
+//     .hero__icecream-shadow {
+//         left: -50px;
+//         // z-index: 0;
+//     }
+// }
+
+// @media screen and (min-width: 1200px) {
+//     .hero__icecream-shadow {
+//         top: -80px;
+//         left: -70px;
+//         // z-index: 0;
+//     }
+// }
 
 
 .hero__icecream {
@@ -401,6 +432,17 @@
     /* z-index: 0; */
     z-index: 23;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 .hero__smile {
@@ -413,11 +455,35 @@
         position: absolute;
         top: 0;
         right: 0px;
-        z-index: 25;
+        // z-index: 25;
     }
 }
 
 /* @media screen and (min-width: 480px) {} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .hero__smile-green {
@@ -426,7 +492,7 @@
     top: 0;
     left: 71.5px;
     /* left: 0; */
-    z-index: 30;
+    // z-index: 30;
 }
 
 @media screen and (min-width: 768px) {
@@ -447,7 +513,7 @@
     position: absolute;
     top: 49px;
     left: 25px;
-    z-index: 30;
+    // z-index: 30;
 }
 
 /* @media screen and (min-width: 480px) {} */
@@ -470,7 +536,7 @@
     position: absolute;
     top: 76px;
     left: 77px;
-    z-index: 30;
+    // z-index: 30;
 }
 
 /* @media screen and (min-width: 480px) {} */
@@ -487,6 +553,31 @@
         display: none;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .hero__info {
     display: none;
