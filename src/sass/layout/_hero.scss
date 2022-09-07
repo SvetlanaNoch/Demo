@@ -25,7 +25,7 @@
 @media screen and (min-width: 1200px) {
     .hero__main {
         background-image: none;
-        /* background-image: url(./image/images/Desktop/hero/dots-desktop.png); */
+        // background-image: url(../images/Desktop/hero/dots-desktop.png);
         /* background-size: contain; */
     }
 }
@@ -41,7 +41,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: bottom;
-    background-image: url(../images/Mobile/hero/dots-mobile@2x.png);
+    // background-image: url(../images/Mobile/hero/dots-mobile@2x.png);
 }
 
 // @media screen and (min-width: 480px) {}
@@ -51,7 +51,7 @@
         display: flex;
         width: 100%;
         max-width: calc(768px - 0*16px);
-        background-image: url(../images/Tablet/hero/dots-tablet@2x.png);
+        // background-image: url(../images/Tablet/hero/dots-tablet@2x.png);
     }
 }
 
@@ -59,7 +59,7 @@
     .hero {
         max-width: 1200px;
         padding-top: 45px;
-        background-image: url(../images/Desktop/hero/dots-desktop@2x.png);
+        // background-image: url(../images/Desktop/hero/dots-desktop@2x.png);
         background-repeat: no-repeat;
         background-size: contain;
         /* background-position: 0 0 ; */
