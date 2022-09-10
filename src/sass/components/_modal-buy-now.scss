@@ -19,9 +19,10 @@
         position: absolute;
         top: 8px;
         right: 8px;
-        background-color: #FFFFFF;
         border: none;
         padding: 0;
+        background: var(--white);
+        
     }
     .buy-now__modal-close-btn-icon {
         width: 9px;
@@ -41,8 +42,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        height: 100vh;
-        overflow: scroll;
+        // height: 100vh;
+        // overflow: scroll;
     }
 
     .buy-now__modal-close-btn {
@@ -54,8 +55,9 @@
         padding: 0;
     }
      .buy-now__modal-close-btn-icon {
-        width: 11px;
-        height: 11px;
+        width: 16px;
+        height: 16px;
+        background-color: var(--white);
     }
 }
 /*-----------MODAL FORM------------*/ 
@@ -220,18 +222,34 @@
             padding-bottom: 20px;
         }
     
-        .buy-now__products-card-ice-cream {
+         .buy-now__products-card-ice-cream {
             border: 2px solid #96AF8C;
             filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+            transition: var(--timing-function);
+            &:hover,
+            &:focus {
+                background-color: #96AF8C;
+            }
         }
     
         .buy-now__products-card-ice-coffee {
-            background-color: #EFD478;
+            border: 2px solid #EFD478;
+            filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+            transition: var(--timing-function);
+            &:hover,
+            &:focus {
+                background-color: #EFD478;
+            }
         }
-    
+
         .buy-now__products-card-milkshakes {
             border: 2px solid #D6936D;
             filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+            transition: var(--timing-function);
+            &:hover,
+            &:focus {
+                background-color: #D6936D;
+            }
         }
     
         .buy-now__modal-form {
@@ -461,15 +479,31 @@
         .buy-now__products-card-ice-cream {
             border: 2px solid #96AF8C;
             filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+            transition: var(--timing-function);
+            &:hover,
+            &:focus {
+                background-color: #96AF8C;
+            }
         }
     
         .buy-now__products-card-ice-coffee {
-            background-color: #EFD478;
+            border: 2px solid #EFD478;
+            filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+            transition: var(--timing-function);
+            &:hover,
+            &:focus {
+                background-color: #EFD478;
+            }
         }
 
         .buy-now__products-card-milkshakes {
             border: 2px solid #D6936D;
             filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+            transition: var(--timing-function);
+            &:hover,
+            &:focus {
+                background-color: #D6936D;
+            }
         }
     
     .buy-now__modal-form {
